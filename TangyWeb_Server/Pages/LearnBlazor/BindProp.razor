@@ -1,0 +1,20 @@
+﻿@page "/LearnBlazor/BindProp"
+
+
+<h3>Product</h3>
+Name: @Product.Name <br />
+Active: @Product.IsActive <br />
+Price: <input type="number" value="@Product.Price" />
+
+
+@code {
+    Tangy_Models.LeanBlazorModels.Demo_Product Product = new()
+        {
+            Id = 1,
+            Name = "Sagar Timalsena",
+            IsActive = true,
+            Price = 11.99
+        };
+
+
+}
