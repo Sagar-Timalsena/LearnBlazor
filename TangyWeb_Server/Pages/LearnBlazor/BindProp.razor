@@ -4,7 +4,11 @@
 <h3>Product</h3>
 Name: @Product.Name <br />
 Active: @Product.IsActive <br />
-Price: <input type="number" value="@Product.Price" />
+Price: @Product.Price<br />
+
+Price: <input type="number" @bind-value="@Product.Price" @bind-value:event="oninput" />
+@*Price:
+<input type="number" @bind-value="@Product.Price" @bind:event="oninput" />*@
 
 
 @code {
