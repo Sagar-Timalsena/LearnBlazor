@@ -16,9 +16,13 @@ Price: <input type="number" @bind-value="@Product.Price" @bind-value:event="onin
             Id = 1,
             Name = "Sagar Timalsena",
             IsActive = true,
-            Price = 11.99
+            Price = 11.99,
+            ProductProperties = new List<Tangy_Models.LeanBlazorModels.Demo_ProductProp>()
+            {
+                new Tangy_Models.LeanBlazorModels.Demo_ProductProp{Id=1,key="Color", Value="Black"},
+                new Tangy_Models.LeanBlazorModels.Demo_ProductProp{Id=1,key="Color", Value="Black"},
+                new Tangy_Models.LeanBlazorModels.Demo_ProductProp { Id = 1, key = "Color", Value = "Black" },
+            }
         };
-
-
 
 }
