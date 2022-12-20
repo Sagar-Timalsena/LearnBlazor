@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tangy_Models.LeanBlazorModels
+﻿namespace Tangy_Models.LeanBlazorModels
 {
     public class Demo_Product
     {
