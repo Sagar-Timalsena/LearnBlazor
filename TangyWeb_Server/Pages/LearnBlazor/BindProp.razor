@@ -3,13 +3,8 @@
 <h3>Product</h3>
 Name: @Product.Name<br />
 Acyive: @Product.IsActive <br />
-
-
-
-
-
-
-
+Price:@Product.Price <br />
+Price: <input type="number" @bind-value="@Product.Price" />
 
 @code {
     Tangy_Models.LearnBlazorModels.Demo_Product Product = new()
@@ -17,6 +12,7 @@ Acyive: @Product.IsActive <br />
             Id = 1,
             Name = "Sagar",
             IsActive = true,
+            Price = 100
         };
 
 }
