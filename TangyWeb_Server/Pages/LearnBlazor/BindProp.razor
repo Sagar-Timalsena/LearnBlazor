@@ -4,7 +4,10 @@
 Name: @Product.Name<br />
 Acyive: @Product.IsActive <br />
 Price:@Product.Price <br />
-Price: <input type="number" @bind-value="@Product.Price" />
+This Product is : @(Product.IsActive?"IsActive":"InActive")<br />
+
+Active: <input type="checkbox" @bind-value="Product.IsActive" checked="@(Product.IsActive?"checked":null)" /> <br />
+Price: <input type="number" @bind-value="@Product.Price" @bind-value:event="oninput" />
 
 @code {
     Tangy_Models.LearnBlazorModels.Demo_Product Product = new()
